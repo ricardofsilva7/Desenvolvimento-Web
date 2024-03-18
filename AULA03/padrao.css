@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    background-color: #c11693;
+    text-align: center;
+    font-size: 33px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    background-color: #000000;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #e58fce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > input {
+    width: 200px;
+    padding: 3px;
+    box-shadow: 3px 3px 5x 0px #a9097f;
+}
+
+main label{
+color:blueviolet;
+font-weight: bold;
+display: block;
+}
+main span {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(20, 27, 27);
+    text-transform: uppercase;
+}
+
+main p {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: flex;
+    top: 10px;
+    width: 100%;
+    height: 45 px;
+    padding: 0px;
+    background-color: #337081;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    padding: 0px;
+    background-color: #000000;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background-color: #c1c6f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > input {
+    width: 200px;
+    padding: 10px;
+    box-shadow: 3px 3px 5x 0px #000000;
+}
+
+main label{
+color:rgb(0, 0, 0);
+font-weight: bold;
+display: block;
+margin-left: 50px;
+font-size: 13px;
+border-color: aliceblue;
+}
+main span {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(20, 27, 27);
+    text-transform: uppercase;
+}
+
+main p {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+}
+.navbar{
+    margin-top: -auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    display: block;
+    position: flex;
+    width: 30%;
+    height: 525px;
+    padding: 30px;
+    background-color: #396e7e;
+    text-align: center;
+    font-size: 12px;
+}
+.circle {
+    
+   border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  
