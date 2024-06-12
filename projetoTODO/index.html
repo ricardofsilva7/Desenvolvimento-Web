@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ContainerEsquerda">
+   
+
+    <div class="Contador">
+    
+
+        <div class="ContadorTarefasConcluidas">
+        <h1>10</h1>
+        <p>Tarefas Criadas</p>
+        </div>
+
+        <div class="ContadorTarefasConcluidas">
+        <h1>20</h1>
+        <p>Tarefas em Andamento</p>
+        </div>
+
+        <div class="ContadorTarefasConcluidas">
+            <h1>1</h1>
+            <p>Tarefas Concluídas</p>
+        </div>
+    </div>
+
+
+    <div class="NovaTarefa">
+
+         <div class="CriarTarefa">
+            <h1>VAMOS TRABALHAR</h1>
+            <h4>Insira sua tarefa</h4>
+            <input class="DigitarTextos" type="text" placeholder="Insira uma tarefa">
+            <h4>Coloque uma duração de tempo</h4>
+            <input class="DigitarTextos" type="text" placeholder="hh:mm:ss">
+            <input class="Enviar" type="submit" value="Criar">
+         </div>   
+
+    </div>
+</div>
+
+    <div class="ContainerDireita">
+
+        <div class="Tarefa">
+            <h1>Nova Tarefa</h1>
+            <h4>Duração: 00:15:00</h4>
+            <span class="SelecionarStatus">
+                
+                <input type="radio" name="radio" value="Não Iniciada" checked>
+                <p>Não Iniciada</p>
+
+                <input type="radio" name="radio" value="Em Andamento">
+                <p>Em Andamento</p>
+                
+                <input type="radio" name="radio" value="Concluida">
+                <p>Concluida</p>
+                
+            </span>
+
+            <input class="ApagarTarefa" type="button" value="Apagar Tarefa">
+
+        </div>
+
+    </div>
+
+
+
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

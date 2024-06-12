@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exercício</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Squads</h1>
+        <form action="#" id="squadForm">
+            <label for="squadName">Nome da Squad:</label>
+            <input type="text" name="squadName" id="squadName" required>
+
+            <label for="squadLeader">Líder:</label>
+            <input type="text" name="squadLeader" id="squadLeader">
+            
+            <label for="squadMembers">Membros:</label>
+            <input type="text" name="squadMembers" id="squadMembers" >
+            
+            <input type="hidden" name="squadRow" id="squadRow">
+            <button id="squadSave" type="submit">Cadastrar Squad</button>
+        </form>
+
+        <h2>Squads cadastradas</h2>
+        <table id="squadTable">
+            <tr>
+                <th>Nome da Squad</th>
+                <th>Líder</th>
+                <th>Membros</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
