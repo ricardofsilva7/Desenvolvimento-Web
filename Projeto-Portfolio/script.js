@@ -1,36 +1,63 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Adiciona eventos de clique aos botões
-    document.querySelectorAll('.img-button').forEach(button => {
-        button.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            const targetSection = document.querySelector(targetId);
+    const header = document.querySelector('header');
 
-            // Oculta todas as seções de conteúdo e remove a classe 'active'
-            document.querySelectorAll('.content-section').forEach(section => {
-                section.classList.remove('active');
-                setTimeout(() => {
-                    section.style.display = 'none';
-                }, 500); // Aguarda a transição de opacidade antes de esconder
-            });
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.style.padding = '5px 20px';
+            header.querySelector('h1').style.fontSize = '20px';
+        } else {
+            header.style.padding = '10px 20px';
+            header.querySelector('h1').style.fontSize = '24px';
+        }
+    });
 
-            // Esconde o texto inicial
-            document.getElementById('initialText').style.display = 'none';
-            
-            document.getElementById('initialText2').style.display = 'none';
+    // Seu código existente...
 
-            // Exibe apenas a seção de conteúdo correspondente ao botão clicado e adiciona a classe 'active'
+    const buttons = document.querySelectorAll('.img-botao');
+    const sections = document.querySelectorAll('.conteudo-materia');
+
+    const showSection = (targetId) => {
+        sections.forEach(section => {
+            section.classList.remove('active');
             setTimeout(() => {
-                targetSection.style.display = 'block';
-                setTimeout(() => {
-                    targetSection.classList.add('active');
-                }, 50); // Aguarda um pequeno intervalo antes de adicionar a classe 'active' para a transição
-            }, 500); // Aguarda a transição de opacidade antes de exibir a nova seção
+                section.style.display = 'none';
+            }, 500); // Aguarda a transição de opacidade antes de esconder
         });
 
-        // Adiciona eventos de mouseover e mouseout para exibir o nome da matéria
-        button.addEventListener('mouseover', function() {
-            const name = this.getAttribute('data-name');
-            this.querySelector('.hover-name').textContent = name;
-        });
+        // Esconde o texto inicial
+        document.getElementById('textoInicial').style.display = 'none';
+        document.getElementById('textoInicial2').style.display = 'none';
+        document.getElementById('textoInicial3').style.display = 'none';
+
+        setTimeout(() => {
+            const targetSection = document.querySelector(targetId);
+            targetSection.style.display = 'block';
+            setTimeout(() => {
+                targetSection.classList.add('active');
+            }, 50); // Aguarda um pequeno intervalo antes de adicionar a classe 'active' para a transição
+        }, 500); // Aguarda a transição de opacidade antes de exibir a nova seção
+    };
+
+    const handleButtonClick = (event) => {
+        const targetId = event.currentTarget.getAttribute('data-target');
+        showSection(targetId);
+    };
+
+    const handleMouseEnter = (event) => {
+        const name = event.currentTarget.getAttribute('data-name');
+        const hoverName = event.currentTarget.querySelector('.hover-name');
+        hoverName.textContent = name;
+        hoverName.classList.add('visible');
+    };
+
+    const handleMouseLeave = (event) => {
+        const hoverName = event.currentTarget.querySelector('.hover-name');
+        hoverName.classList.remove('visible');
+    };
+
+    buttons.forEach(button => {
+        button.addEventListener('click', handleButtonClick);
+        button.addEventListener('mouseenter', handleMouseEnter);
+        button.addEventListener('mouseleave', handleMouseLeave);
     });
 });

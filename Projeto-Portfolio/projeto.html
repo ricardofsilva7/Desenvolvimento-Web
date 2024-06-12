@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
     <title>PORTFÓLIO</title>
     <link rel="stylesheet" href="padrao.css">
 </head>
 <body>
     <header>
-        <a href="teste.html">
+        <a href="projeto.html">
         <img src="imgs/senaipng.png" alt="header" class="logo">
         </a>
         <p><strong>Gaspar Ricardo Junior</p></strong>
@@ -16,32 +16,33 @@
         <h2>RICARDO SILVA</h2>
         
     </header>
-    <div class="content">
+    <div class="conteudo">
         <aside class="navbar">
             <div class="botao">
-                <button class="img-button" data-target="#cpp" data-name="Automação Industrial">
-                    <img src="C:\PROJETOS - GITHUB\Desenv. Web\ProjetoSite\c++.png" alt="C++">
+                <button class="img-botao" data-target="#cpp" data-name="Automação Industrial">
+                    <img src="imgs/c++.png" alt="C++">
                     <div class="hover-name"></div>
                 </button>
-                <button class="img-button" data-target="#html" data-name="Desenvolvimento Web">
-                    <img src="C:\PROJETOS - GITHUB\Desenv. Web\ProjetoSite\html.png" alt="HTML">
+                <button class="img-botao" data-target="#html" data-name="Desenvolvimento Web">
+                    <img src="imgs/html.png" alt="HTML">
                     <div class="hover-name"></div>
                 </button>
-                <button class="img-button" data-target="#java" data-name="Linguagem de Programação">
-                    <img src="C:\PROJETOS - GITHUB\Desenv. Web\ProjetoSite\java.png" alt="Java">
+                <button class="img-botao" data-target="#java" data-name="Linguagem de Programação">
+                    <img src="imgs/java.png" alt="Java">
                     <div class="hover-name"></div>
                 </button>
-                <button class="img-button" data-target="#python" data-name="Ciência de Dados">
-                    <img src="C:\PROJETOS - GITHUB\Desenv. Web\ProjetoSite\python.png" alt="Python">
+                <button class="img-botao" data-target="#python" data-name="Ciência de Dados">
+                    <img src="imgs/python.png" alt="Python">
                     <div class="hover-name"></div>
                 </button>
-                <button class="img-button" data-target="#sql" data-name="Bancos de Dados">
-                    <img src="C:\PROJETOS - GITHUB\Desenv. Web\ProjetoSite\sql.png" alt="SQL">
+                <button class="img-botao" data-target="#sql" data-name="Bancos de Dados">
+                    <img src="imgs/sql.png" alt="SQL">
                     <div class="hover-name"></div>
                 </button>
             </div>
         </aside>
         <main id="conteudoPrincipal">
+
            <section id="textoInicial">
                 <h3>Bem-vindo ao Meu Portfólio</h3>
                 
@@ -56,15 +57,14 @@
 
             <section id="textoInicial3" class="blinking-text">
                 <h3>Navegação</h3>
-               
                 <p class="blinking-text">Acesse o conteúdo através dos ícones laterais</p>
             </section>
   
-                <section id="cpp" class="content-section">
-                    <br>
+            <section id="cpp" class="conteudo-materia">
+                <br>
                 <h3>Resumo Semestral - Automação Industrial</h3>
                 <h4>Orientador: Profº Gabriel</h4>
-            <br>
+                <br>
                 <p>A matéria de <strong>Automação Industrial</strong>, orientada pelo professor <strong>Gabriel</strong>, utiliza como linguagem principal o <strong>C++</strong>. Esta linguagem de baixo nível é geralmente empregada em sistemas embarcados e automação de máquinas. Durante as aulas, foram apresentadas diversas explicações, exemplos práticos de utilização e principais características da linguagem.</p>
                 <p>Após a introdução ao C++, foram realizados exemplos de aplicação em Arduino através do 'Tinkercad'. O professor explicou desde o <strong>'void setup'</strong>, que inclui declarações globais, até o <strong>'void loop'</strong> para a execução contínua de comandos, incluindo condições, entradas (inputs) e saídas (outputs).</p>
                 <br>
@@ -79,62 +79,67 @@
                 <br>
                 <p>Além disso, tivemos contato com a controladora <strong>'ESP32'</strong>, realizando exercícios para controle de LED, como configuração de relógio, contagem regressiva com condição de botão para redução do tempo e limpeza de dados.</p>
                 <img src="imgs/thinker2.png" alt="C++"><img src="imgs/esp32-2.png">
-                <ul>GITHUB Link  <a href="https://github.com/ricardofsilva7/Automacao-Industrial">Diretório</a>.</ul>
-
+                <br>
+                <a href="https://github.com/ricardofsilva7/Automacao-Industrial">
+                    <img src="imgs/github.png" id="cpp" class="github-cpp">
+                </a>
             </section>
 
-            <section id="html" class="content-section">
+            <section id="html" class="conteudo-materia">
                 <br>
                 <h3>Resumo Semestral - Desenvolvimento Web</h3>
                 <h4>Orientador: Profº Andre</h4>
-            <br>
-            <p>A matéria de Desenvolvimento Web, orientada pelo professor <strong>André</strong>, tem como objetivo nos introduzir às primeiras aplicações FrontEnd. Desenvolvemos os conteúdos com o auxílio das linguagens <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
-            <p>Inicialmente, fomos introduzidos aos conceitos básicos do <strong>HTML</strong>, desde nomenclaturas até padrões e boas práticas. Para facilitar nossa visualização na criação de sites, utilizamos o <strong>FIGMA</strong> para criar um modelo a ser seguido ao iniciar a criação no <strong>HTML</strong>. Antecipadamente, foram explicadas as divisões da página, como 'header', 'main', 'navbar' e 'footer'.</p>
-            <p>Meu primeiro site consistiu apenas na manipulação do <strong>HTML</strong>, introduzindo textos simples. Posteriormente, iniciamos alguns exercícios para aprimoramento e introdução de novas funcionalidades. Criamos uma página contendo uma <strong>Calculadora de IMC</strong> e, em seguida, desenvolvemos uma <strong>Calculadora Digital</strong>, semelhante à calculadora do Windows. Nesse momento, já havíamos sido introduzidos ao <strong>CSS</strong>, onde realizamos a estilização da página, incluindo tamanho de fonte, alinhamento de textos e itens, enquanto iniciávamos a introdução ao <strong>JavaScript</strong>. Além disso, realizamos outros exercícios, como a criação de um <strong>currículo com foto</strong> e principais competências.</p>
-            <p>Aprendemos também sobre o <strong>DOM</strong> em <strong>HTML</strong>, um conjunto de objetos e estrutura de dados, semelhante a uma árvore de objetos. Para praticar, desenvolvemos um site como modelo de <strong>Cadastro de Squads</strong>, incluindo funcionalidades, botões e caixas de alerta.</p>
-            </br>
-            <img src="imgs/calculadora.png" alt="calculadora"><img src="imgs/cadastrosquad.png"><img src="imgs/cadastro.png">
-                <ul>GITHUB Link  <a href="https://github.com/ricardofsilva7/Desenvolvimento-Web">Diretório</a>.</ul>
+                <br>
+                <p>A matéria de Desenvolvimento Web, orientada pelo professor <strong>André</strong>, tem como objetivo nos introduzir às primeiras aplicações FrontEnd. Desenvolvemos os conteúdos com o auxílio das linguagens <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
+                <p>Inicialmente, fomos introduzidos aos conceitos básicos do <strong>HTML</strong>, desde nomenclaturas até padrões e boas práticas. Para facilitar nossa visualização na criação de sites, utilizamos o <strong>FIGMA</strong> para criar um modelo a ser seguido ao iniciar a criação no <strong>HTML</strong>. Antecipadamente, foram explicadas as divisões da página, como 'header', 'main', 'navbar' e 'footer'.</p>
+                <p>Meu primeiro site consistiu apenas na manipulação do <strong>HTML</strong>, introduzindo textos simples. Posteriormente, iniciamos alguns exercícios para aprimoramento e introdução de novas funcionalidades. Criamos uma página contendo uma <strong>Calculadora de IMC</strong> e, em seguida, desenvolvemos uma <strong>Calculadora Digital</strong>, semelhante à calculadora do Windows. Nesse momento, já havíamos sido introduzidos ao <strong>CSS</strong>, onde realizamos a estilização da página, incluindo tamanho de fonte, alinhamento de textos e itens, enquanto iniciávamos a introdução ao <strong>JavaScript</strong>. Além disso, realizamos outros exercícios, como a criação de um <strong>currículo com foto</strong> e principais competências.</p>
+                <p>Aprendemos também sobre o <strong>DOM</strong> em <strong>HTML</strong>, um conjunto de objetos e estrutura de dados, semelhante a uma árvore de objetos. Para praticar, desenvolvemos um site como modelo de <strong>Cadastro de Squads</strong>, incluindo funcionalidades, botões e caixas de alerta.</p>
+                </br>
+                <img src="imgs/calculadora.png" alt="calculadora"><br><img src="imgs/todolist.png"><br><img src="imgs/cadastrosquad.png"><br><img src="imgs/cadastro.png">
+                <br>
+                <a href="https://github.com/ricardofsilva7/Desenvolvimento-Web">
+                <img src="imgs/github.png" alt="java" class="github-logo">
+                </a>
             </section>
 
-            <section id="java" class="content-section">
+            <section id="java" class="conteudo-materia">
                 <br>
                 <h3>Resumo Semestral - Linguagem de Programação</h3>
                 <h4>Orientador: Profº Cainã</h4>
-            <br>
-            <p>A matéria de Linguagem de Programação, orientada pelo professor Cainã Antunes, tem como objetivo introduzir a lógica de programação para iniciantes. Embora todas as disciplinas tenham sua parcela de importância na lógica, esta matéria destaca-se por ser a base para o desenvolvimento inicial.</p>
-            </br>
-                    <h4>Fundamentos da Programação:</h4>
-                    <br>
-                        <p><strong>Regras Sintáticas e Semânticas:</strong> Entendimento das regras que governam a estrutura e o significado do código.</p>
-                        <p><strong>Compiladores:</strong> Definição e função dos compiladores na programação.</p>
-                        <p><strong>Variáveis:</strong> Características e tipos de variáveis (char, int, bool, string) e seu uso correto.</p>
-                        <p><strong>Operadores:</strong> Introdução aos operadores aritméticos (+, -, *), condicionais (==, !=, <=) e lógicos (&&, ||, !).</p>
-                        <p><strong>Conversão de Variáveis e Input:</strong> Como converter tipos de dados e realizar entradas de usuário.</p>
-                        <br>
-                        <br>
-                        <h4>Exercícios Práticos:</h4>
-                    <br>
-                    <h5>Introdução a Linguaguem de Programação</h5>
-                    <ul>
-                        <li><strong>Variáveis, atribuições e operações matemáticas</strong> Exercícios introdutórios, como calcular o dobro de um número e converter velocidade de KM/h para M/s.</li>
-                        <img src="imgs/aritmeticas.png" alt="aritmetica">
-                    </ul>
-                    <ul>        
-                        <li><a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao/tree/main/Lista-01" target="_blank">Lista 01 - Variáveis, atribuições e operações matemáticas</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <h5>Estruturas de Decisão:</h5>
-                    <ul>
-                        <li><strong>If/Else:</strong> Executar blocos de código com base em condições específicas. Exemplo: verificar se um número é primo.</li>
-                        <li><strong>Switch/Case:</strong> Permitir múltiplos caminhos de execução com comandos de parada 'break'.</li>
-                    </ul>
-                        <img src="imgs/ifelse.png" alt="ifelse">
-                        <img src="imgs/switchcase.png" alt="switch">
-                    <ul>
-                        <li><a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao/tree/main/Lista-02" target="_blank">Lista 02 - If/Else</a></li>
-                    </ul>
+                <br>
+                <p>A matéria de Linguagem de Programação, orientada pelo professor Cainã Antunes, tem como objetivo introduzir a lógica de programação para iniciantes. Embora todas as disciplinas tenham sua parcela de importância na lógica, esta matéria destaca-se por ser a base para o desenvolvimento inicial.</p>
+                </br>
+                <h4>Fundamentos da Programação:</h4>
+                <br>
+                <p><strong>Regras Sintáticas e Semânticas:</strong> Entendimento das regras que governam a estrutura e o significado do código.</p>
+                <p><strong>Compiladores:</strong> Definição e função dos compiladores na programação.</p>
+                <p><strong>Variáveis:</strong> Características e tipos de variáveis (char, int, bool, string) e seu uso correto.</p>
+                <p><strong>Operadores:</strong> Introdução aos operadores aritméticos (+, -, *), condicionais (==, !=, <=) e lógicos (&&, ||, !).</p>
+                <p><strong>Conversão de Variáveis e Input:</strong> Como converter tipos de dados e realizar entradas de usuário.</p>
+                <br>
+                <br>
+                <h4>Exercícios Práticos:</h4>
+                <br>
+                <h5>Introdução a Linguaguem de Programação</h5>
+                <ul>
+                    <li><strong>Variáveis, atribuições e operações matemáticas</strong> Exercícios introdutórios, como calcular o dobro de um número e converter velocidade de KM/h para M/s.</li>
+                    <img src="imgs/aritmeticas.png" alt="aritmetica">
+                </ul>
+                <ul>        
+                    <li><a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao/tree/main/Lista-01" target="_blank">Lista 01 - Variáveis, atribuições e operações matemáticas</a></li>
+                </ul>
+                <br>
+                <br>
+                <h5>Estruturas de Decisão:</h5>
+                <ul>
+                    <li><strong>If/Else:</strong> Executar blocos de código com base em condições específicas. Exemplo: verificar se um número é primo.</li>
+                    <li><strong>Switch/Case:</strong> Permitir múltiplos caminhos de execução com comandos de parada 'break'.</li>
+                </ul>
+                    <img src="imgs/ifelse.png" alt="ifelse">
+                    <img src="imgs/switchcase.png" alt="switch">
+                <ul>
+                    <li><a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao/tree/main/Lista-02" target="_blank">Lista 02 - If/Else</a></li>
+                 </ul>
                     <br>
                     <br>
                     <h5>Estruturas de Repetição:</h5>
@@ -180,11 +185,13 @@
                             <li><a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao/tree/main/Lista-06" target="_blank">Lista 6 - Programação Orientada ao Objeto</a></li>
                         </ul>
                         <br>
-                <ul>GITHUB Link <a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao">Diretório</a>.</ul>
+                        <a href="https://github.com/ricardofsilva7/Linguagem-de-Programacao">
+                            <img src="imgs/github.png" alt="java" class="github-logo2">
+                        </a>
             </section>
 
 
-            <section id="python" class="content-section">
+            <section id="python" class="conteudo-materia">
                 <br>
                 <h3>Resumo Semestral - Ciência de Dados</h3>
                 <h4>Prof. Cainã</h4>
@@ -281,10 +288,12 @@
                 <h5>Anderson-Darling</h5>
                     <img src="imgs/teste3.png" alt="anderson" class="data-image">
                 <br>
-                <ul>Colab Link <a href="https://colab.research.google.com/drive/1q1pCZmzMXfgFDO2Xx3pPTbu5kT0M9YK8?usp=sharing">Notebook</a>.</ul>    
+                <a href="https://colab.research.google.com/drive/1q1pCZmzMXfgFDO2Xx3pPTbu5kT0M9YK8?usp=sharing">
+                    <img src="imgs/colab.png" id="ciencia" class="colab-logo">
+                    </a> 
             </section>
 
-            <section id="sql" class="content-section">
+            <section id="sql" class="conteudo-materia">
                 <br>
                 <h3>Resumo Semestral - Banco de Dados</h3>
                 <h4>Orientador: Profº Cainã</h4>
@@ -294,26 +303,29 @@
                 <p>Iniciamos nossos estudos no modelo de <strong>Banco de Dados Relacionais</strong>. Aprendemos sobre os diagramas de relacionamento e sua importância para a criação e implementação de um banco de dados.</p>
                 <br>
                 <h4>Diagrama de Relacionamento</h4>
-                <img src="imgs/diagrama.png" alt="Diagrama de Relacionamento" class="content-image">
+                <img src="imgs/diagrama.png" alt="Diagrama de Relacionamento" class="conteudo-image">
                 <br>
                 <p>Depois, aprendemos sobre as plataformas de gerenciamento e passamos a utilizar o <strong>PostgreSQL</strong>. A partir dele, iniciamos aprendendo os comandos para implementação dos dados, desde criação e alteração de tabela (<strong>DDL</strong>); em seguida, aprendemos sobre os comandos de manipulação, onde introduzimos alguns dados. Para melhor exemplificação, o professor nos orientou a criar um banco de dados para um ecommerce, utilizando os comandos <strong>DDL</strong>, <strong>DML</strong> e <strong>DQL</strong> para realizar as consultas conforme passadas pelo professor.</p>
                 <br>
                 <h4>Ecommerce</h4>
-                <img src="imgs/ddl.png" alt="DDL" class="content-image">
-                <img src="imgs/ecommerce.png" alt="E-commerce" class="content-image">
+                <img src="imgs/ddl.png" alt="DDL" class="conteudo-image">
+                <img src="imgs/ecommerce.png" alt="E-commerce" class="conteudo-image">
                 <br>
                 <p>Também realizamos diversos exercícios para fixação dos métodos, desde a criação dos diagramas de relacionamento até os comandos <strong>DDL</strong>, <strong>DML</strong> e <strong>DQL</strong>.</p>
                 <h4>Exercícios de Fixação</h4>
-                <img src="imgs/ddl-livros.png" alt="DDL Livros" class="content-image">
-                <img src="imgs/dml-livros.png" alt="DML Livros" class="content-image">
-                <img src="imgs/dql-medico.png" alt="DQL Médico" class="content-image">
+                <img src="imgs/ddl-livros.png" alt="DDL Livros" class="conteudo-image">
+                <img src="imgs/dml-livros.png" alt="DML Livros" class="conteudo-image">
+                <img src="imgs/dql-medico.png" alt="DQL Médico" class="conteudo-image">
                 <br>
                 <p>Por fim, realizamos o exercício de criação do Banco de Dados para uma Universidade, desde do Diagrama até os comandos DDL, DML e DQL.</p>
                 <h4>Universidade</h4>
-                <img src="imgs/ddl-univers.png" alt="DDL Universidade" class="content-image">
-                <img src="imgs/dql-univers.png" alt="DQL Universidade" class="content-image">
-                <img src="imgs/dml-univers.png" alt="DML Universidade" class="content-image">
-                <ul>GITHUB Link <a href="https://github.com/ricardofsilva7/BancoDeDados">Diretório</a>.</ul>
+                <img src="imgs/ddl-univers.png" alt="DDL Universidade" class="conteudo-image">
+                <img src="imgs/dql-univers.png" alt="DQL Universidade" class="conteudo-image">
+                <img src="imgs/dml-univers.png" alt="DML Universidade" class="conteudo-image">
+                <br>
+                <a href="https://github.com/ricardofsilva7/BancoDeDados">
+                    <img src="imgs/github.png" alt="java" class="github-logo3">
+                </a>
             </section>
 
         </main>

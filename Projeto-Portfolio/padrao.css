@@ -96,62 +96,62 @@ footer {
 }
 
 
-.content {
+.conteudo {
     display: flex;
     flex: 1;
 }
 
-.content-section {
+.conteudo-materia {
     display: none;
     opacity: 0;
     transition: opacity 0.5s;
     font-family: DejaVu Sans Mono, monospace;
 }
 
-.content-section.active {
+.conteudo-materia.active {
     display: block;
     opacity: 1;
 }
 
-.content-section h3 {
+.conteudo-materia h3 {
     font-size: 30px;
     margin-bottom: 10px;
     color: #333;
     text-align: center;
 }
 
-.content-section h4 {
+.conteudo-materia h4 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #3a3a3a;
     text-align: center;
 }
 
-.content-section h5 {
+.conteudo-materia h5 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #141414;
     text-align: left;
 }
 
-.content-section p {
+.conteudo-materia p {
     font-size: 18px;
     margin-bottom: 10px;
     line-height: 1.5;
     color: #2f2f2f;
 }
 
-.content-section ul {
+.conteudo-materia ul {
     list-style: disc;
     margin-left: 20px;
     color: #555;
 }
 
-.content-section li {
+.conteudo-materia li {
     margin-bottom: 5px;
 }
 
-.content-section img {
+.conteudo-materia img {
     width: 400px;
     height: auto;
     display: block;
@@ -159,6 +159,68 @@ footer {
     border-radius: 5px;
      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+.conteudo-materia #ciencia{
+    width: 100px;
+    height: 80px;
+    margin: 0 100 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.conteudo-materia #ciencia:hover{
+    transform: translateY(-4px);
+    transition: background-color 0.6s ease, transform 0.8s ease; 
+}
+
+.conteudo-materia .github-logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 100 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.conteudo-materia .github-logo:hover{
+    transform: translateY(-4px);
+    transition: background-color 0.6s ease, transform 0.8s ease; 
+}
+
+.conteudo-materia #cpp{
+    width: 80px;
+    height: 80px;
+    margin: 0 100 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.conteudo-materia #cpp:hover{
+    transform: translateY(-4px);
+    transition: background-color 0.6s ease, transform 0.8s ease; 
+}
+
+.conteudo-materia .github-logo2{
+    width: 80px;
+    height: 80px;
+    margin: 0 100 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.conteudo-materia .github-logo2:hover{
+    transform: translateY(-4px);
+    transition: background-color 0.6s ease, transform 0.8s ease;
+}
+
+.conteudo-materia .github-logo3{
+    width: 80px;
+    height: 80px;
+    margin: 0 100 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.conteudo-materia .github-logo3:hover{
+    transform: translateY(-4px);
+    transition: background-color 0.6s ease, transform 0.8s ease;
+}
+
 
 #python img{
     width: 525px;
@@ -168,6 +230,7 @@ footer {
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 #cpp img{
     width: 315px;
     height: auto;
@@ -177,14 +240,13 @@ footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-
-.bo {
+.botao {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.img-button {
+.img-botao {
     border: none;
     background: none;
     padding: 10px;
@@ -197,7 +259,7 @@ footer {
     align-items: center;
 }
 
-.img-button .hover-name {
+.img-botao .hover-name {
     position: absolute;
     bottom: -30px;
     left: 50%;
@@ -211,15 +273,15 @@ footer {
     visibility: hidden;
 }
 
-.img-button:hover {
+.img-botao:hover {
     transform: scale(1.1);
 }
 
-.img-button:hover .hover-name {
+.img-botao:hover .hover-name {
     visibility: visible;
 }
 
-.img-button img {
+.img-botao img {
     width: 60px;
     height: 60px;
 }
