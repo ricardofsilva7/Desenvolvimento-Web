@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('header');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             header.style.padding = '5px 20px';
             header.querySelector('h1').style.fontSize = '20px';
@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Seu código existente...
-
     const buttons = document.querySelectorAll('.img-botao');
     const sections = document.querySelectorAll('.conteudo-materia');
 
@@ -21,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             section.classList.remove('active');
             setTimeout(() => {
                 section.style.display = 'none';
-            }, 500); // Aguarda a transição de opacidade antes de esconder
+            }, 500);
         });
 
         // Esconde o texto inicial
@@ -34,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
             targetSection.style.display = 'block';
             setTimeout(() => {
                 targetSection.classList.add('active');
-            }, 50); // Aguarda um pequeno intervalo antes de adicionar a classe 'active' para a transição
-        }, 500); // Aguarda a transição de opacidade antes de exibir a nova seção
+            }, 50);
+        }, 500);
     };
 
     const handleButtonClick = (event) => {
